@@ -17,12 +17,16 @@ const Nav = (props) => {
     return (
         <div className="container-lg">
             <nav className={isActive? "Nav show-menu" : "Nav"}>
-                <button onClick={showMenu} className="mobile-only Nav--hamburgerBtn"><Hamburger/></button>
+                <button onClick={showMenu} className="mobile-only Nav--hamburgerBtn">
+                    <Hamburger/>
+                    <span className="sr-only">Hamburger Button</span>
+                </button>
                 <h1>room</h1>
                 <ul>
                     <li className="mobile-only">
                         <button onClick={closeMenu} className="Nav--closeBtn">
                             <Close className="Nav--closeIcon" />
+                            <span className="sr-only">Close Menu</span>
                         </button>
                     </li>
                     <li><a href="/#">home</a></li>
