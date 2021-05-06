@@ -1,7 +1,5 @@
 import React from "react";
 
-import {ReactComponent as ArrowIcon} from "../../assets/icons/icon-arrow.svg";
-
 const Button = (props) => {
     return (
         <a className="Button" href={props.link}>{props.text}
