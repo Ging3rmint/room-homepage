@@ -1,0 +1,53 @@
+.Banner{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    transform: scale(0.98);
+    transition: all 0.3s ease-in-out;
+
+    &.is-active{
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        transform: scale(1);
+    }
+
+    &__image{
+        width: 58.4%;
+        float: left;
+
+        @media only screen and (max-width: $mobile){
+            float: none;
+            width: 100%;
+        }
+    }
+
+    &__text{
+        width: 41.6%;
+        float: right;
+        padding: 85px 98px;
+
+        @media only screen and (max-width: $mobile){
+            float: none;
+            width: 100%;
+            padding: 40px 30px;
+        }
+
+        h2{
+            margin-top: 0;
+            font-weight: $semi-bold;
+            font-size: 30px;
+
+            @media only screen and (max-width: $mobile){
+                font-size: 26px;
+            }
+        }
+
+        p{
+            font-size: 12px;
+            line-height: 20px;
+            color: $dark-grey;
+        }
+    }
+}

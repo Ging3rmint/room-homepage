@@ -1,0 +1,30 @@
+.Button{
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .5em;
+    display: flex;
+    align-items: center;
+    color: $black;
+    margin-top: 35px;
+
+    .arrow{
+        margin-left: 40px;
+        path{
+            fill: $black;
+        }
+    }
+
+    &:hover{
+        color: $dark-grey;
+        .arrow{
+            path{
+                fill: $dark-grey;
+            }
+        }
+    }
+
+    img{
+        margin-left: 35px;
+    }
+
+}

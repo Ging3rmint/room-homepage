@@ -1,0 +1,25 @@
+.container-lg{
+    max-width: $desktop-lg;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container{
+    max-width: $desktop;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.mobile-only{
+    display: none !important;
+
+    @media only screen and (max-width: $mobile){
+        display: block !important;
+    }
+}
+
+.desktop-only{
+    @media only screen and (max-width: $desktop){
+        display: none !important;
+    }
+}

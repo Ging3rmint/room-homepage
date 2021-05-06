@@ -1,0 +1,6 @@
+.Carousel{
+    overflow: hidden;
+    position: relative;
+    @include clearfix;
+    display: flex;
+}
